@@ -1,0 +1,9 @@
+{
+  "name": "j-and-h",
+  "version": "1.0.0",
+  "description": "Website and Server for j-and-h.com",
+  "scripts": {
+    "test": "npm test"
+  },
+  "license": "MIT"
+}

@@ -1,8 +1,11 @@
 export interface Recipe {
     name: string;
-    imageUrl: string;
-    rating: number;
-    note: string;
+    imageUrl?: string;
+    url?: string;
+    ingredients?: string;
+    directions?: string;
+    rating?: number;
+    note?: string;
     state?: RecipeState;
 }
 

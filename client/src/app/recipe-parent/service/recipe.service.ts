@@ -5,7 +5,7 @@ const recipes: Recipe[] = [
   {
     name: 'Test Recipe 1',
     imageUrl: 'https://http.cat/404',
-    rating: 3,
+    rating: 3.5,
     note: 'Hi mom',
     state: 'wishlist'
   },
@@ -37,12 +37,16 @@ const recipes: Recipe[] = [
 })
 export class RecipeService {
 
-  list(filter: string) {
+  list(filter: string): Recipe[] {
     if (filter === 'all') {
       return recipes;
     }
 
     return recipes.filter(r => r.state === filter);
+  }
+
+  get(id: string): Recipe {
+    return recipes[0];
   }
 
   constructor() { }

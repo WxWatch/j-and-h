@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RecipeModule } from './recipe-parent/recipe.module';
 import { RecipeRoutingModule } from './recipe-parent/recipe-routing.module';
+import { CallbackComponent } from './auth/callback/callback.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,

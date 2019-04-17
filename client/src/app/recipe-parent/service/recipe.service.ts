@@ -7,6 +7,8 @@ const recipes: Recipe[] = [
     imageUrl: 'https://http.cat/404',
     rating: 3.5,
     note: 'Hi mom',
+    ingredients: '55 Lemons<br/>12 Limes',
+    directions: 'Do lots of things<br/>Do other stuff',
     state: 'wishlist'
   },
   {

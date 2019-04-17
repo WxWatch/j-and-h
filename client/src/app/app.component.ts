@@ -1,5 +1,5 @@
+import { AuthService } from './auth/auth.service';
 import { Component, OnInit } from '@angular/core';
-import { TempServiceService } from './temp/temp-service.service';
 
 @Component({
   selector: 'jh-root',
@@ -15,9 +15,13 @@ export class AppComponent implements OnInit {
     console.log('you typed me', text);
   }
 
-  constructor(private tempServiceService: TempServiceService) {}
+  constructor(public auth: AuthService) {
+    auth.handleAuthentication();
+  }
 
   ngOnInit(): void {
-    this.myStuff = this.tempServiceService.getMyStuff();
+    if (this.auth.isAuthenticated()) {
+      this.auth.renewTokens();
+    }
   }
 }

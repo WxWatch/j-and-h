@@ -1,9 +1,29 @@
-<h1>{{ recipe.name }}</h1>
-<h2>{{ recipe.url }}</h2>
-<jh-star-rating [rating]="recipe.rating"></jh-star-rating>
-
-<p>{{ recipe.note }}</p>
-
-<p>{{ recipe.ingredients }}</p>
-
-<p>{{ recipe.directions }}</p>
+<header>
+    <div>{{ recipe.dateAdded | date }}</div>
+    <h1 class="recipe-title">{{ recipe.name }}</h1>
+    <div class="recipe-url"><em>Adapted from <a [href]="recipe.url">{{ recipe.urlPrettyText }}</a></em></div>
+</header>
+<section class="recipe-note">
+    <p>{{ recipe.note }}</p>
+</section>
+<section class="image-rating-container">
+    <div class="image">
+        <img [src]="recipe.imageUrl" />
+    </div>
+    <div class="rating">
+        <h1>Rating</h1>
+        <jh-star-rating [rating]="recipe.rating"></jh-star-rating>
+    </div>
+</section>
+<section>
+    <h1 class="recipe-header">Ingredients</h1>
+    <ul class="ingredients-list">
+        <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+    </ul>
+</section>
+<section>
+    <h1 class="recipe-header">Directions</h1>
+    <ol class="directions-list">
+        <li *ngFor="let direction of recipe.directions">{{ direction }}</li>
+    </ol>
+</section>

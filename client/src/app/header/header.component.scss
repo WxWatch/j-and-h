@@ -1,8 +1,12 @@
+@import '../../colors.scss';
+
 header {
-    background: olivedrab;
-    height: 72px;
+    background: $teal;
+    height: 108px;
+    border-bottom: 15px solid $darkRed;
+    box-shadow: grey 0 5px 10px;
 
     .logo {
-        max-height: 72px;
+        max-height: 108px;
     }
 }

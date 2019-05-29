@@ -1,0 +1,64 @@
+@import '../../../colors.scss';
+
+.recipe-title {
+    color: $red;
+    font-size: 3em;
+    margin: 0;
+}
+
+.recipe-header {
+    color: $red;
+    font-size: 2em;
+}
+
+.recipe-url {
+    text-align: right;
+}
+
+.recipe-note {
+    line-height: 1.5;
+}
+
+.image-rating-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin: 0 12px;
+
+    div {
+        flex: 1 1 auto;
+    }
+
+    .image {
+        max-width: 65%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .rating {
+        h1 {
+            color: $teal;
+        }
+    }
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: circle;
+    
+    li {
+        width: 50%;
+        margin: 4px 0;
+    }
+}
+
+.directions-list {
+    li {
+        margin: 4px 0;
+    }
+}

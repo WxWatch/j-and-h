@@ -1,1 +1,7 @@
-<jh-recipe-list-item *ngFor="let recipe of recipes" [recipe]="recipe"></jh-recipe-list-item>
+<div class="featured-items">
+    <jh-recipe-featured-item *ngFor="let recipe of recipes | slice:0:3" [recipe]="recipe"></jh-recipe-featured-item>
+</div>
+<hr />
+<div class="recipe-items">
+    <jh-recipe-list-item *ngFor="let recipe of recipes" [recipe]="recipe"></jh-recipe-list-item>
+</div>

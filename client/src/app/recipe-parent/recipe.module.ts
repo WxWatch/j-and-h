@@ -8,6 +8,7 @@ import { RecipeListItemComponent } from './recipe-list/recipe-list-item/recipe-l
 import { FormsModule } from '@angular/forms';
 import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { RecipeFeaturedItemComponent } from './recipe-list/recipe-featured-item/recipe-featured-item.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
     RecipeListComponent,
     RecipeListItemComponent,
     RecipeDetailComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    RecipeFeaturedItemComponent
   ],
   imports: [
     CommonModule,

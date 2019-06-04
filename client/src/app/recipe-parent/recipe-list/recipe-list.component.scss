@@ -1,0 +1,18 @@
+.featured-items {
+    display: flex;
+
+    jh-recipe-featured-item {
+        flex: 1 1 auto;
+        width: 24%;
+        padding: 12px;
+    }
+}
+
+.recipe-items {
+    display: flex;
+    flex-direction: column;
+
+    jh-recipe-list-item {
+        margin: 12px;
+    }
+}

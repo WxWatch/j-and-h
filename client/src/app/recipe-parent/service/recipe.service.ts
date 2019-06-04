@@ -46,7 +46,7 @@ const recipes: Recipe[] = [
     name: 'Test Recipe 4',
     imageUrl: 'https://http.cat/404',
     rating: 3,
-    note: 'Hi mom',
+    note: 'Here is some information about this recipe. I don\'t know what information to put here. Should this maybe just be a description? Short and sweet? That can be our “blog” portion; maybe a reason why we added this or what caused us to search for it. Maybe we had a really good meal at some place or whatever. I feel like the description can be typed and stored as a HTML thing that we just put in here. That way I can format and add links when adding it I guess.',
     state: 'completed',
     dateAdded: new Date()
   }

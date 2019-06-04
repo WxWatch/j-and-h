@@ -1,15 +1,10 @@
 @import '../../../../colors.scss';
 @import '../../../../mixins.scss';
 
-.recipe-item {
+.recipe-item ::ng-deep.ant-card-body {
     display: flex;
-    box-shadow: gray 2px 2px 8px;
     height: 200px;
-    padding-right: 12px;
-
-    div {
-        // flex: 1 1 auto;
-    }
+    padding: 0 12px 0 0;
 
     img {
         max-width: 100%;

@@ -1,5 +1,9 @@
-<div class="featured-item">
+<nz-card class="featured-item" nzHoverable [nzCover]="coverTemplate">
+  <nz-card-meta [nzTitle]="recipe.name" [nzDescription]="ratingTemplate"></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
   <img [src]="recipe.imageUrl" />
-  <h2>{{ recipe.name }}</h2>
+</ng-template>
+<ng-template #ratingTemplate>
   <jh-star-rating [rating]="recipe.rating"></jh-star-rating>
-</div>
+</ng-template>

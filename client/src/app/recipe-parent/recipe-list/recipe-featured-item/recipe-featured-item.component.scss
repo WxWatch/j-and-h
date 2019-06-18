@@ -1,18 +1,9 @@
-@import '../../../../colors.scss';
+@import "../../../../colors.scss";
+
 
 .featured-item {
-    box-shadow: gray 2px 2px 8px;
-    text-align: center;
-    padding-bottom: 12px;
-
-    h2 {
+    ::ng-deep.ant-card-meta-title {
         color: $red;
-        margin: 0.2em;
-    }
-
-    img {
-        max-width: 100%;
-        object-fit: none;
-        object-position: center;
+        font-size: 1.7em;
     }
 }

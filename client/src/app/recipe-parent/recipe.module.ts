@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
+
+
 import { RecipeParentComponent } from './recipe-parent.component';
 import { RecipeRoutingModule } from './recipe-routing.module';
 import { RecipeFilterComponent } from './recipe-filter/recipe-filter.component';
@@ -23,7 +26,9 @@ import { RecipeFeaturedItemComponent } from './recipe-list/recipe-featured-item/
   imports: [
     CommonModule,
     FormsModule,
-    RecipeRoutingModule
-  ]
+    RecipeRoutingModule,
+    NgZorroAntdModule
+  ],
+  providers: [{ provide: NZ_I18N, useValue: en_US }],
 })
 export class RecipeModule { }
